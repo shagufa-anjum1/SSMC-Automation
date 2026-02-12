@@ -11,7 +11,7 @@ import styles from "./Services.module.css";
 const Services: React.FC = () => {
   const services = [
     {
-      image: "",
+      image: "/src/assets/images/Service/servicePro2.jpg",
       title: "Injection Molding",
       category: "Core Service",
       description:
@@ -23,7 +23,7 @@ const Services: React.FC = () => {
       ],
     },
     {
-      image: "",
+      image: "/src/assets/images/Service/servicePro3.jpg",
       title: "Custom Plastic Fabrication",
       category: "Manufacturing",
       description:
@@ -35,7 +35,7 @@ const Services: React.FC = () => {
       ],
     },
     {
-      image: "",
+      image: "/src/assets/images/Service/servicePro4.jpg",
       title: "Assembly Services",
       category: "Value-Added",
       description:
@@ -47,7 +47,7 @@ const Services: React.FC = () => {
       ],
     },
     {
-      image: "",
+      image: "/src/assets/images/Service/servicePro5.jpg",
       title: "Quality Testing",
       category: "Quality Assurance",
       description:
@@ -59,7 +59,7 @@ const Services: React.FC = () => {
       ],
     },
     {
-      image: "",
+      image: "/src/assets/images/Service/servicePro6.jpg",
       title: "Tool Design & Manufacturing",
       category: "Engineering",
       description:
@@ -67,7 +67,7 @@ const Services: React.FC = () => {
       features: ["CAD/CAM design", "Rapid prototyping", "Tool maintenance"],
     },
     {
-      image: "",
+      image: "/src/assets/images/Service/servicePro7.jpg",
       title: "Product Development",
       category: "Consulting",
       description:
@@ -99,6 +99,7 @@ const Services: React.FC = () => {
       description:
         "Rapid prototype development for testing, validation, and design refinement before production.",
     },
+  
     {
       number: "04",
       title: "Production",
@@ -125,17 +126,18 @@ const Services: React.FC = () => {
         subtitle="Our Services"
         title="Comprehensive Manufacturing Solutions"
         description="From design to delivery, we provide end-to-end plastic manufacturing services with precision, quality, and reliability."
+        backgroundImage="/src/assets/images/Service/ServiceHeroImg1.jpg"
       >
         <Link to="/contact">
           <Button variant="primary" size="large">
-            Request Quote
-          </Button>
-        </Link>
-        <Link to="/contact">
-          <Button variant="outline" size="large">
             Schedule Consultation
           </Button>
         </Link>
+        {/* <Link to="/contact">
+          <Button variant="outline" size="large">
+            Schedule Consultation
+          </Button>
+        </Link> */}
       </HeroIndustrial>
 
       <section className={`${styles.services} section`}>
@@ -143,8 +145,8 @@ const Services: React.FC = () => {
           <div className={styles.header}>
             <h2>What We Offer</h2>
             <p className={styles.subtitle}>
-              Comprehensive manufacturing capabilities backed by ISO
-              certification and 15+ years of expertise.
+              Comprehensive manufacturing capabilities backed by ISO certification and 15+ years of
+              expertise.
             </p>
           </div>
 
@@ -163,13 +165,12 @@ const Services: React.FC = () => {
         </Container>
       </section>
 
-      <section className={`${styles.process} section bg-secondary`}>
+      <section className={`${styles.process} section`}>
         <Container>
           <div className={styles.header}>
             <h2>Our Process</h2>
             <p className={styles.subtitle}>
-              A proven 6-step methodology ensuring quality, efficiency, and
-              customer satisfaction.
+              A proven 6-step methodology ensuring quality, efficiency, and customer satisfaction.
             </p>
           </div>
           <ProcessTimeline steps={processSteps} />

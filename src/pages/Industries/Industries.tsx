@@ -118,6 +118,7 @@ const Industries: React.FC = () => {
       <HeroMinimal
         title="Industries We Serve"
         description="Delivering precision-engineered plastic components across diverse sectors with specialized solutions for each industry's unique requirements."
+        backgroundImage="/src/assets/images/Service/ServiceHeroImg2.jpg"
       />
 
       <section className={`${styles.industries} section`}>

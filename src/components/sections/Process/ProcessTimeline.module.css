@@ -1,6 +1,6 @@
 .process {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
   position: relative;
 }
@@ -73,4 +73,10 @@
 
 .step:last-child .arrow {
   display: none;
+}
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 60px;
 }

@@ -1,51 +1,50 @@
+/* ===== SERVICES SECTION ===== */
+
 .services {
-  background-color: var(--bg-primary);
+  padding: 120px 0;
+  background: linear-gradient(to bottom, #ffffff, #f4f6f9);
 }
 
 .header {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto var(--space-16);
+  max-width: 750px;
+  margin: 0 auto 80px;
 }
 
 .header h2 {
-  font-size: var(--text-5xl);
+  font-size: clamp(2.2rem, 4vw, 3rem);
   font-weight: 800;
-  color: var(--text-primary);
-  margin-bottom: var(--space-6);
-}
-
-@media (max-width: 767px) {
-  .header h2 {
-    font-size: var(--text-3xl);
-  }
+  color: #111;
+  margin-bottom: 20px;
 }
 
 .subtitle {
-  font-size: var(--text-xl);
-  color: var(--text-secondary);
+  font-size: 1.1rem;
+  color: #666;
   line-height: 1.7;
-  margin: 0;
 }
+
+/* ===== GRID ===== */
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-8);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
 }
 
-@media (max-width: 1023px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 767px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
+/* ===== PROCESS SECTION ===== */
 
 .process {
-  /* Uses global .section and .bg-secondary classes */
+  padding: 120px 0;
+  background: #EEEEEE;
+  color: #DE802B;
 }
+
+.process .header h2 {
+  color: #161E54;
+}
+
+.process .subtitle {
+  color: #161E54;
+}
+
