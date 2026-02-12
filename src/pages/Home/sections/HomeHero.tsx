@@ -11,14 +11,14 @@ export const HomeHero: React.FC = () => {
       title: 'Building a Greener Tomorrow',
       description:
         'Leading manufacturer of precision plastic components with sustainable manufacturing practices',
-      image: '/src/assets/images/backgrounds/image16.jpg',
+      image: '/src/assets/images/Service/ServiceHeroImg1.jpg',
       link: '/sustainability',
     },
     {
       title: 'Leadership Through Innovation',
       description: 'Advanced automation solutions and cutting-edge manufacturing technology',
       image:
-        'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1600&auto=format&fit=crop',
+        '/src/assets/images/Service/ServiceHeroImg2.jpg',
       link: '/about',
     },
     {
@@ -26,14 +26,14 @@ export const HomeHero: React.FC = () => {
       description:
         'Precision-engineered plastic components for electronics and automotive industries',
       image:
-        'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1600&auto=format&fit=crop',
+        '/src/assets/images/Service/servicePro1.jpg',
       link: '/services',
     },
     {
       title: 'Shaping the Future of Industry',
       description: 'State-of-the-art injection molding and assembly services for global brands',
       image:
-        'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&auto=format&fit=crop',
+        '/src/assets/images/Service/servicePro2.jpg',
       link: '/industries',
     },
   ];
