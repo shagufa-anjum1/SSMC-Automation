@@ -1,10 +1,31 @@
 .hero {
+  position: relative;
   padding-top: calc(var(--section-padding-y-desktop) + 40px);
   padding-bottom: var(--section-padding-y-mobile);
-  background-color: var(--bg-secondary);
+  min-height: 500px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
+/* 👇 Overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 1;
+}
+
+/* Content upar rahe */
 .content {
+  position: relative;
+  z-index: 2;
   text-align: center;
 }
 
@@ -12,7 +33,7 @@
   font-size: var(--text-6xl);
   font-weight: 800;
   line-height: 1.1;
-  color: var(--text-primary);
+  color: #ffff;
   margin-bottom: var(--space-6);
 }
 
@@ -25,7 +46,7 @@
 .description {
   font-size: var(--text-xl);
   line-height: 1.7;
-  color: var(--text-secondary);
+  color: #ffff;
   margin-bottom: var(--space-8);
 }
 

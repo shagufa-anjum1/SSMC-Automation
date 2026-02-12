@@ -12,6 +12,7 @@ const About: React.FC = () => {
       <HeroMinimal
         title="About SSMC Automation"
         description="Building the future of precision manufacturing with innovation, quality, and sustainability at our core."
+        backgroundImage="/src/assets/images/backgrounds/image12.jpg"
       />
       <AboutStory />
       <AboutValues />

@@ -7,25 +7,25 @@ export const AboutLeadership: React.FC = () => {
     {
       name: "Rajesh Kumar",
       position: "Founder & CEO",
-      image: "",
+      image: "/src/assets/images/team/teamLeaderImg1.jpg",
       bio: "25+ years of experience in manufacturing and automation. Visionary leader driving innovation.",
     },
     {
       name: "Priya Sharma",
       position: "Chief Operations Officer",
-      image: "",
+      image: "/src/assets/images/team/teamLeaderImg6.jpg",
       bio: "Expert in lean manufacturing and process optimization. 18 years in operations management.",
     },
     {
       name: "Amit Patel",
       position: "Head of Engineering",
-      image: "",
+      image: "/src/assets/images/team/teamLeaderImg3.jpg",
       bio: "Specialist in injection molding technology. Led 200+ successful automation projects.",
     },
     {
       name: "Neha Singh",
       position: "Quality Assurance Director",
-      image: "",
+      image: "/src/assets/images/team/teamLeaderImg5.jpg",
       bio: "ISO certification expert ensuring highest quality standards across all products.",
     },
   ];
