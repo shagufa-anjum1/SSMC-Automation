@@ -1,0 +1,46 @@
+/* ============================================
+   SSMC AUTOMATION - MAIN STYLESHEET
+   Imports all CSS files in correct order
+   ============================================ */
+
+/* 1. CSS Variables (must be first) */
+@import './variables.css';
+
+/* 2. Reset & Base Styles */
+@import './reset.css';
+
+/* 3. Typography */
+@import './typography.css';
+
+/* 4. Utility Classes */
+@import './utilities.css';
+
+/* 5. Animations */
+@import './animations.css';
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+/* Root element */
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Smooth transitions on all elements (except animations) */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Disable transitions on reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

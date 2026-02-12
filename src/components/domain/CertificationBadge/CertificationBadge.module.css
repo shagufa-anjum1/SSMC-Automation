@@ -1,0 +1,60 @@
+.badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.badge:hover {
+  border-color: var(--color-success);
+  box-shadow: var(--shadow-md);
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.placeholder {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--color-success) 0%, #059669 100%);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: var(--text-3xl);
+  color: white;
+  font-weight: 800;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.name {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.issuer {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.year {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  font-weight: 600;
+}

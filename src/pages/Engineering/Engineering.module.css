@@ -1,0 +1,94 @@
+.capabilities {
+  background-color: var(--bg-primary);
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--space-16);
+}
+
+.header h2 {
+  font-size: var(--text-5xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+}
+
+@media (max-width: 767px) {
+  .header h2 {
+    font-size: var(--text-3xl);
+  }
+}
+
+.subtitle {
+  font-size: var(--text-xl);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.equipment {
+  /* Uses global .section and .bg-secondary classes */
+}
+
+.equipmentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+
+@media (max-width: 1023px) {
+  .equipmentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.equipmentCard {
+  padding: var(--space-8);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.equipmentCard:hover {
+  border-color: var(--color-primary-600);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.equipmentCard h3 {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.equipmentCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.equipmentCard li {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  padding-left: var(--space-5);
+  position: relative;
+}
+
+.equipmentCard li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary-600);
+  font-size: var(--text-sm);
+}
+
+.software {
+  background-color: var(--bg-primary);
+}

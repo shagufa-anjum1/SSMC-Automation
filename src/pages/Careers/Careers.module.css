@@ -1,0 +1,140 @@
+.benefits {
+  background-color: var(--bg-primary);
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--space-16);
+}
+
+.header h2 {
+  font-size: var(--text-5xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+}
+
+@media (max-width: 767px) {
+  .header h2 {
+    font-size: var(--text-3xl);
+  }
+}
+
+.subtitle {
+  font-size: var(--text-xl);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.openings {
+  /* Uses global .section and .bg-secondary classes */
+}
+
+.jobList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.jobCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.jobHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-6);
+}
+
+@media (max-width: 767px) {
+  .jobHeader {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.jobTitle {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.jobMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.department {
+  font-weight: 600;
+  color: var(--color-primary-600);
+}
+
+.separator {
+  color: var(--text-tertiary);
+}
+
+.location {
+  font-weight: 500;
+}
+
+.jobDetails {
+  display: flex;
+  gap: var(--space-8);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-light);
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.detailLabel {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.detailValue {
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.cta {
+  background-color: var(--bg-primary);
+}
+
+.ctaContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.ctaContent h2 {
+  font-size: var(--text-4xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.ctaContent p {
+  font-size: var(--text-xl);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}

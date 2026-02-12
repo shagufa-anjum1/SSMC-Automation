@@ -1,0 +1,212 @@
+/* Intro Section */
+.intro {
+  padding: 5rem 0;
+  background: #ffffff;
+}
+
+.introContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.introTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.introDescription {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: black;
+}
+
+.introImage {
+  display: flex;
+  justify-content: center;
+}
+
+/* Three Image Showcase */
+.imageShowcase {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.showcaseGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.showcaseCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.showcaseCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.showcaseImageWrapper {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.showcaseImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.showcaseCard:hover .showcaseImage {
+  transform: scale(1.1);
+}
+
+.showcaseOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4));
+  color: white;
+  transform: translateY(0); /* Always visible - remove hide */
+  transition: background 0.3s ease;
+}
+
+.showcaseCard:hover .showcaseOverlay {
+  background: #002455; /* Blue on hover */
+}
+
+.showcaseTitle {
+  font-size: 1.5rem;
+  font-weight: 700; /* Made bolder */
+  margin: 0 0 0.5rem 0;
+  color: #FFFFFF; /* Pure white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added shadow for visibility */
+}
+
+.showcaseDesc {
+  font-size: 1rem;
+  margin: 0;
+  color: #FFFFFF; /* Pure white */
+  opacity: 0.95;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Highlights Section */
+.highlights {
+  padding: 4rem 0;
+  background: white;
+}
+
+.highlightsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.highlightCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.highlightCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.highlightIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.highlightTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+}
+
+.highlightDesc {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Stats Section */
+.stats {
+  padding: 4rem 0;
+  background: #002455;
+  color: white;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .introContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .introTitle {
+    font-size: 2rem;
+  }
+
+  .showcaseGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .showcaseImageWrapper {
+    height: 250px;
+  }
+
+  .highlightsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+  }
+}

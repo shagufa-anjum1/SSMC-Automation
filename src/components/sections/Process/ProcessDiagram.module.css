@@ -1,0 +1,102 @@
+.diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.diagram.horizontal {
+  flex-direction: row;
+}
+
+.diagram.vertical {
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .diagram.horizontal {
+    flex-direction: column;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  background-color: var(--bg-primary);
+  border: 2px solid var(--color-primary-200);
+  border-radius: var(--radius-lg);
+  min-width: 150px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: var(--color-primary-600);
+}
+
+.label {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.connector {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.diagram.horizontal .connector {
+  flex-direction: row;
+}
+
+.diagram.vertical .connector {
+  flex-direction: column;
+}
+
+.line {
+  background-color: var(--color-primary-300);
+}
+
+.diagram.horizontal .line {
+  width: 40px;
+  height: 2px;
+}
+
+.diagram.vertical .line {
+  width: 2px;
+  height: 40px;
+}
+
+@media (max-width: 767px) {
+  .diagram.horizontal .line {
+    width: 2px;
+    height: 40px;
+  }
+}
+
+.arrowhead {
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.diagram.horizontal .arrowhead {
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent var(--color-primary-300);
+}
+
+.diagram.vertical .arrowhead {
+  border-width: 10px 6px 0 6px;
+  border-color: var(--color-primary-300) transparent transparent transparent;
+}
+
+@media (max-width: 767px) {
+  .diagram.horizontal .arrowhead {
+    border-width: 10px 6px 0 6px;
+    border-color: var(--color-primary-300) transparent transparent transparent;
+  }
+}

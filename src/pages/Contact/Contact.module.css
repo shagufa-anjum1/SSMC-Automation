@@ -1,0 +1,52 @@
+.contact {
+  background-color: var(--bg-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+@media (max-width: 1023px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.title {
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.description {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.infoSection {
+  position: sticky;
+  top: 100px;
+}
+
+@media (max-width: 1023px) {
+  .infoSection {
+    position: static;
+  }
+}
+
+.map {
+  /* Uses global .section and .bg-secondary classes */
+}
