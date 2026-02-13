@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
           {/* Logo with Image */}
           <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
             <img
-              src="/src/assets/images/logo/logo.jpeg"
+              src="src/assets/images/logo/logo.jpeg"
               alt="SSMC Automation"
               className={styles.logoImage}
             />
