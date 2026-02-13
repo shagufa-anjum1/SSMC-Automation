@@ -11,6 +11,7 @@ const Contact: React.FC = () => {
       <HeroMinimal
         title="Get In Touch"
         description="Have a project in mind? Our team is ready to discuss your manufacturing needs and provide customized solutions."
+        backgroundImage="/src/assets/images/contact/contactImg2.jpg"
       />
 
       <section className={`${styles.contact} section`}>

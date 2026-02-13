@@ -98,6 +98,7 @@ const Careers: React.FC = () => {
         subtitle="Join Our Team"
         title="Build Your Career with SSMC Automation"
         description="Be part of a dynamic team that's shaping the future of precision manufacturing. We offer challenging projects, growth opportunities, and a collaborative culture."
+        backgroundImage="/src/assets/images/contact/contactImg1.jpg"
       >
         <a href="#openings">
           <Button variant="primary" size="large">

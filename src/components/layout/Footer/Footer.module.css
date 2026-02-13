@@ -185,3 +185,27 @@
 .separator {
   color: rgba(255, 255, 255, 0.3);
 }
+/* Logo container */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: start-end; /* Center logo */
+  margin-bottom: 0px;
+}
+
+/* Logo image */
+.logoImage {
+  width: 100px;        /* Logo ka width chhota kiya */
+  max-width: 100%;     /* Responsive */
+  height: auto;
+  display: block;
+  margin-bottom: 6px;  /* Text ke liye gap */
+}
+
+/* Optional: logo subtext */
+.logoSubtext {
+  font-size: 13px;     /* Chhota text */
+  color: #ccc;         /* Light color */
+  text-align: center;
+  font-weight: 500;
+}

@@ -90,6 +90,7 @@ const Sustainability: React.FC = () => {
         subtitle="Sustainability Commitment"
         title="Building a Greener Future"
         description="Environmental responsibility is at the core of our operations. We're committed to sustainable manufacturing practices that protect our planet for future generations."
+        backgroundImage="/src/assets/images/Service/servicePro8.jpg"
       />
 
       <section className={`${styles.impact} section`}>
