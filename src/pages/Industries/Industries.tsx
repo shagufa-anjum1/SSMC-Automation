@@ -4,6 +4,7 @@ import { Container } from "@components/layout/Container";
 import { IndustryCard } from "@components/domain/IndustryCard";
 import { CTABanner } from "@components/sections/CTA/CTABanner";
 import styles from "./Industries.module.css";
+import ServiceHeroImg2 from "@assets/images/Service/ServiceHeroImg2.jpg";
 
 const Industries: React.FC = () => {
   const industries = [
@@ -118,7 +119,7 @@ const Industries: React.FC = () => {
       <HeroMinimal
         title="Industries We Serve"
         description="Delivering precision-engineered plastic components across diverse sectors with specialized solutions for each industry's unique requirements."
-        backgroundImage="/src/assets/images/Service/ServiceHeroImg2.jpg"
+        backgroundImage={ServiceHeroImg2}
       />
 
       <section className={`${styles.industries} section`}>

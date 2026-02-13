@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container } from '../Container';
 import { useScrollPosition } from '@hooks/useScrollPosition';
 import styles from './Header.module.css';
+import mainLogo from '@/assets/images/logo/logo.jpeg';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +39,8 @@ export const Header: React.FC = () => {
           {/* Logo with Image */}
           <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
             <img
-              src="src/assets/images/logo/logo.jpeg"
+              src={mainLogo}
+              // src = '/SSMC-logo.png'
               alt="SSMC Automation"
               className={styles.logoImage}
             />

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "@components/layout/Container";
 import styles from "./AboutStory.module.css";
+import image3 from "@/assets/images/backgrounds/image3.jpg";
 
 export const AboutStory: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ export const AboutStory: React.FC = () => {
         <div className={styles.content}>
           <div className={styles.imageSection}>
             <img
-              src="/src/assets/images/backgrounds/image3.jpg"
+              src={image3}
               alt="SSMC Automation Manufacturing Unit"
               className={styles.image}
             />

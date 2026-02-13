@@ -4,6 +4,7 @@ import { Container } from "@components/layout/Container";
 import { ContactForm } from "@components/sections/Contact/ContactForm";
 import { ContactInfo } from "@components/sections/Contact/ContactInfo";
 import styles from "./Contact.module.css";
+import contactImg2 from "@assets/images/contact/contactImg2.jpg";
 
 const Contact: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const Contact: React.FC = () => {
       <HeroMinimal
         title="Get In Touch"
         description="Have a project in mind? Our team is ready to discuss your manufacturing needs and provide customized solutions."
-        backgroundImage="/src/assets/images/contact/contactImg2.jpg"
+        backgroundImage={contactImg2}
       />
 
       <section className={`${styles.contact} section`}>

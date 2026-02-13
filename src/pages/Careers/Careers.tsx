@@ -6,6 +6,7 @@ import { Card } from "@components/ui/Card";
 import { Button } from "@components/ui/Button";
 import { FeatureGrid } from "@components/sections/Features/FeatureGrid";
 import styles from "./Careers.module.css";
+import contactImg1 from "@assets/images/contact/contactImg1.jpg";
 
 const Careers: React.FC = () => {
   const benefits = [
@@ -98,7 +99,7 @@ const Careers: React.FC = () => {
         subtitle="Join Our Team"
         title="Build Your Career with SSMC Automation"
         description="Be part of a dynamic team that's shaping the future of precision manufacturing. We offer challenging projects, growth opportunities, and a collaborative culture."
-        backgroundImage="/src/assets/images/contact/contactImg1.jpg"
+        backgroundImage={contactImg1}
       >
         <a href="#openings">
           <Button variant="primary" size="large">

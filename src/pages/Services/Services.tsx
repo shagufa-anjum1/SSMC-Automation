@@ -7,76 +7,66 @@ import { CTABanner } from "@components/sections/CTA/CTABanner";
 import { Button } from "@components/ui/Button";
 import { Link } from "react-router-dom";
 import styles from "./Services.module.css";
+import servicePro2 from "@assets/images/Service/servicePro2.jpg";
+import servicePro3 from "@assets/images/Service/servicePro3.jpg";
+import servicePro4 from "@assets/images/Service/servicePro4.jpg";
+import servicePro5 from "@assets/images/Service/servicePro5.jpg";
+import servicePro6 from "@assets/images/Service/servicePro6.jpg";
+import servicePro7 from "@assets/images/Service/servicePro7.jpg";
+import ServiceHeroImg1 from "@assets/images/Service/ServiceHeroImg1.jpg";
 
 const Services: React.FC = () => {
   const services = [
     {
-      image: "/src/assets/images/Service/servicePro2.jpg",
-      title: "Injection Molding",
-      category: "Core Service",
+      image: servicePro2,
+      title: 'Injection Molding',
+      category: 'Core Service',
       description:
-        "High-precision plastic injection molding with advanced multi-cavity molds for mass production.",
+        'High-precision plastic injection molding with advanced multi-cavity molds for mass production.',
       features: [
-        "Multi-cavity tooling",
-        "Automated production lines",
-        "Micro to large-scale parts",
+        'Multi-cavity tooling',
+        'Automated production lines',
+        'Micro to large-scale parts',
       ],
     },
     {
-      image: "/src/assets/images/Service/servicePro3.jpg",
-      title: "Custom Plastic Fabrication",
-      category: "Manufacturing",
+      image: servicePro3,
+      title: 'Custom Plastic Fabrication',
+      category: 'Manufacturing',
       description:
-        "Tailored plastic component manufacturing for unique product requirements and specifications.",
-      features: [
-        "Custom design support",
-        "Prototype development",
-        "Low to high volume runs",
-      ],
+        'Tailored plastic component manufacturing for unique product requirements and specifications.',
+      features: ['Custom design support', 'Prototype development', 'Low to high volume runs'],
     },
     {
-      image: "/src/assets/images/Service/servicePro4.jpg",
-      title: "Assembly Services",
-      category: "Value-Added",
+      image: servicePro4,
+      title: 'Assembly Services',
+      category: 'Value-Added',
       description:
-        "Complete assembly solutions including ultrasonic welding, adhesive bonding, and final packaging.",
-      features: [
-        "Ultrasonic welding",
-        "Insert molding",
-        "Final assembly & packaging",
-      ],
+        'Complete assembly solutions including ultrasonic welding, adhesive bonding, and final packaging.',
+      features: ['Ultrasonic welding', 'Insert molding', 'Final assembly & packaging'],
     },
     {
-      image: "/src/assets/images/Service/servicePro5.jpg",
-      title: "Quality Testing",
-      category: "Quality Assurance",
+      image: servicePro5,
+      title: 'Quality Testing',
+      category: 'Quality Assurance',
       description:
-        "Comprehensive quality control with dimensional inspection, material testing, and certification.",
-      features: [
-        "CMM inspection",
-        "Material analysis",
-        "ISO compliance testing",
-      ],
+        'Comprehensive quality control with dimensional inspection, material testing, and certification.',
+      features: ['CMM inspection', 'Material analysis', 'ISO compliance testing'],
     },
     {
-      image: "/src/assets/images/Service/servicePro6.jpg",
-      title: "Tool Design & Manufacturing",
-      category: "Engineering",
+      image: servicePro6,
+      title: 'Tool Design & Manufacturing',
+      category: 'Engineering',
       description:
-        "In-house mold design and manufacturing capabilities for optimized production efficiency.",
-      features: ["CAD/CAM design", "Rapid prototyping", "Tool maintenance"],
+        'In-house mold design and manufacturing capabilities for optimized production efficiency.',
+      features: ['CAD/CAM design', 'Rapid prototyping', 'Tool maintenance'],
     },
     {
-      image: "/src/assets/images/Service/servicePro7.jpg",
-      title: "Product Development",
-      category: "Consulting",
-      description:
-        "End-to-end product development support from concept to production launch.",
-      features: [
-        "Design consultation",
-        "Material selection",
-        "Production optimization",
-      ],
+      image: servicePro7,
+      title: 'Product Development',
+      category: 'Consulting',
+      description: 'End-to-end product development support from concept to production launch.',
+      features: ['Design consultation', 'Material selection', 'Production optimization'],
     },
   ];
 
@@ -126,7 +116,7 @@ const Services: React.FC = () => {
         subtitle="Our Services"
         title="Comprehensive Manufacturing Solutions"
         description="From design to delivery, we provide end-to-end plastic manufacturing services with precision, quality, and reliability."
-        backgroundImage="/src/assets/images/Service/ServiceHeroImg1.jpg"
+        backgroundImage={ServiceHeroImg1}
       >
         <Link to="/contact">
           <Button variant="primary" size="large">

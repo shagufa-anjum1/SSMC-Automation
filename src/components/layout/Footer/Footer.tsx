@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from '../Container';
 import styles from './Footer.module.css';
+import footerLogo from '@/assets/images/logo/SSMC-logo.png';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -36,7 +37,7 @@ export const Footer: React.FC = () => {
           <div className={styles.column}>
             <div className={styles.logo}>
               <img
-                src="/src/assets/images/logo/SSMC-logo.png" // Add your logo in public/images/logo.png
+                src={footerLogo} // Add your logo in public/images/logo.png
                 alt="SSMC Automation"
                 className={styles.logoImage}
               />

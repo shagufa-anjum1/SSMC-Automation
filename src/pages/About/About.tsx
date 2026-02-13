@@ -5,6 +5,7 @@ import { AboutValues } from "./sections/AboutValues";
 import { AboutMilestones } from "./sections/AboutMilestones";
 import { AboutLeadership } from "./sections/AboutLeadership";
 import { CTABanner } from "@components/sections/CTA/CTABanner";
+import image12 from "@/assets/images/backgrounds/image12.jpg";
 
 const About: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const About: React.FC = () => {
       <HeroMinimal
         title="About SSMC Automation"
         description="Building the future of precision manufacturing with innovation, quality, and sustainability at our core."
-        backgroundImage="/src/assets/images/backgrounds/image12.jpg"
+        backgroundImage={image12}
       />
       <AboutStory />
       <AboutValues />
