@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from '@components/layout/Container';
 import { Button } from '@components/ui/Button';
+import ServiceHeroImg1 from '@/assets/images/Service/ServiceHeroImg1.jpg';
+import ServiceHeroImg2 from '@/assets/images/Service/ServiceHeroImg2.jpg';
+import ServicePro1 from '@/assets/images/Service/servicePro1.jpg';
+import ServicePro2 from '@/assets/images/Service/servicePro2.jpg';
 
 export const HomeHero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,14 +15,14 @@ export const HomeHero: React.FC = () => {
       title: 'Building a Greener Tomorrow',
       description:
         'Leading manufacturer of precision plastic components with sustainable manufacturing practices',
-      image: '/src/assets/images/Service/ServiceHeroImg1.jpg',
+      image: ServiceHeroImg1,
       link: '/sustainability',
     },
     {
       title: 'Leadership Through Innovation',
       description: 'Advanced automation solutions and cutting-edge manufacturing technology',
       image:
-        '/src/assets/images/Service/ServiceHeroImg2.jpg',
+        ServiceHeroImg2,
       link: '/about',
     },
     {
@@ -26,14 +30,14 @@ export const HomeHero: React.FC = () => {
       description:
         'Precision-engineered plastic components for electronics and automotive industries',
       image:
-        '/src/assets/images/Service/servicePro1.jpg',
+        ServicePro1,
       link: '/services',
     },
     {
       title: 'Shaping the Future of Industry',
       description: 'State-of-the-art injection molding and assembly services for global brands',
       image:
-        '/src/assets/images/Service/servicePro2.jpg',
+        ServicePro2,
       link: '/industries',
     },
   ];

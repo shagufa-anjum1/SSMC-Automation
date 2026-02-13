@@ -6,6 +6,7 @@ import { Badge } from "@components/ui/Badge";
 import { StatsCounter } from "@components/sections/Stats/StatsCounter";
 import { CTABanner } from "@components/sections/CTA/CTABanner";
 import styles from "./Sustainability.module.css";
+import servicePro8 from "@assets/images/Service/servicePro8.jpg";
 
 const Sustainability: React.FC = () => {
   const initiatives = [
@@ -90,7 +91,7 @@ const Sustainability: React.FC = () => {
         subtitle="Sustainability Commitment"
         title="Building a Greener Future"
         description="Environmental responsibility is at the core of our operations. We're committed to sustainable manufacturing practices that protect our planet for future generations."
-        backgroundImage="/src/assets/images/Service/servicePro8.jpg"
+        backgroundImage={servicePro8}
       />
 
       <section className={`${styles.impact} section`}>
